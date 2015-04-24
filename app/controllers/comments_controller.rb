@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
     respond_with post, comment
   end
 
-
    def upvote
       post = Post.find(params[:post_id])
       comment = post.comments.find(params[:id])
